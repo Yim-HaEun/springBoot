@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="EUC-KR">
+		<title>게시물 상세보기</title>
+	</head>
+	<body>
+		<h2>게시물 상세보기</h2>
+		
+		<table border="1">
+			<thead>
+				<tr>
+					<th>아이디</th>
+					<th>제목</th>
+					<th>글쓴이</th>
+					<th>↓↓↓ click ↓↓↓</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="board : ${boards}">
+					<td th:text="${board.boardId}"></td>
+					<td th:text="${board.title}"></td>
+					<td th:text="${board.author}"></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

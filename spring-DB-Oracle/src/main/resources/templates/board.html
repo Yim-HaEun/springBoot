@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="EUC-KR">
+		<title>Board Info</title>
+	</head>
+	<body>
+		<h1>Board Information</h1>
+		<div th:if="${board != null}">
+			<p th:text="Board ID: + ${board.board_id}" ></p>
+			<p th:text="title : + ${board.title}" ></p>
+			<p th:text="content: + ${board.content}" ></p>
+			<p th:text="author: + ${board.author}" ></p>
+		</div>
+		
+		<div th:if="${user ==null}">
+			<p>Board not found</p>
+		</div>
+	
+	</body>
+</html>

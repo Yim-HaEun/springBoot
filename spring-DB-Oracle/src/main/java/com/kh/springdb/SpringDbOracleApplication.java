@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.kh.springdb.mapper")
+
 public class SpringDbOracleApplication {
 
 	public static void main(String[] args) {

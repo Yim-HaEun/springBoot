@@ -10,11 +10,12 @@ import com.kh.springdb.model.Product;
 
 @Service
 public class ProductService {
-	@Autowired
+	
 	//JPA
 	//private ProductRepository productRepository;
+	@Autowired
 	private ProductMapper productMapper;
-	public List<Product> getAllProducts(){
+	public List<Product> getAllProduct(){
 		
 		return productMapper.getAllProducts();//"찾은 제품 모두 다 가지고 오는 메서드 추가";
 		

@@ -5,6 +5,7 @@ public class Board {
 	private String title;
 	private String content;
 	private String author;
+	
 	public int getBoard_id() {
 		return board_id;
 	}
