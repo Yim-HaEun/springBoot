@@ -98,4 +98,6 @@ public class BoardController {
  	클라이언트에서 전송한 데이터를 객체로 값을 넣어주고
  	컨트롤러에서 사용할 수 있도록 해주는 것
  	전달된 데이터는 mapper를 통해 db에 저장됨
+ 	
+ 	
   */
