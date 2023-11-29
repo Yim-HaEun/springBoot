@@ -1,0 +1,29 @@
+html -> 자바로 바로 통신할 수 있는게 없음
+jsp -> html과 java에서 가져온 내용을 연동하기 위해 사용하는 템플릿
+		<% %>
+spring에서는 정말 완전하게 html은 html역할을 하고 자바는 자바역할을 했으면 좋겠다.
+
+thymeleaf : 역할 - spring에서 html과 java가 분리되게 thymeleaf를 xml에 포함시켜서 가져오는 일을 대신하게 함 
+
+	자바에서 가져오는 내용을 html에 삽입해주기 위해 사용할 수 있는 xmls
+	xml에서 사용하는 주소와 이름을 나타내는 공간
+	xml : 데이터를 저장하고 전송하기 위해서 사용하는 언어
+	
+	
+	th:text=DB에서 값을 가지고 옴
+		th:text= "${product_id}" 		 ->getProductId
+		th:text= "${product.product_id}" ->products 중에서 하나씩 가지고와서 넣어줄 때
+	
+		th:object="${product}" ->애초에 값을 하나만 가지고오겠다.
+								1.새로운 값이 자동으로 들어가야할 수 있음	Insert
+									
+								2.기존에 있던 값이 또 한번 들어가야할 수 있음 Update
+								
+								->이럴바에는 html하나만 만들고 컨트롤러에서 메서드 하나만 추가해서
+								메서드에서 기존에 id값이 있는지 없는지 존재 여부만 체크,
+								만약 값이 있다면 수정으로 가고 값이 없다면 새로 만들기로 보내자
+								
+	
+	
+	
+	
