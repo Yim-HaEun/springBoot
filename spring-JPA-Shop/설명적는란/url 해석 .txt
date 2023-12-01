@@ -1,0 +1,16 @@
+http://127.0.0.1:8082/board?keyword=키워드작성
+localhost=127.0.0.1 =내 아이피 주소(보호된  아이피 주소)
+	:8082 = 포트번호
+	/board=/요청 경로(path) 특정 기능이나 페이지에 대한 요청을 나타냄
+			?/keyword=쿼리 시작을 나타냄 데이터베이스 키 값을 작성
+			= 필요한 키워드 값을 작성하기
+			
+		@GetMapping("search")
+		public String searchCafes(@RequestParam String keyword,Model model){
+			//특정 키워드를 포함하는 카페를 검색
+			List<Cafe> cafes = cafeService.findCafeByName(keyword);
+			//모델에 검색 결과 추가
+			model.addAttribute("cafes",cafes);
+			//검색 결과를 보여줄 뷰 페이지 작성
+			return "searchResults";
+			}
