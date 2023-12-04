@@ -4101,3 +4101,32 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.mybatis.s
 2023-12-01 17:49:19,575 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@fe89394{STOPPING}[10.0.15,sto=0]
 2023-12-01 17:49:19,588 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@26b42a50{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
 2023-12-01 17:49:19,614 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@49305598{/help,null,STOPPED}
+2023-12-04 09:01:44,421 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-12-04 12:07:26,972 [Worker-102: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kh.chap2_02:chapt_02:0.0.1-SNAPSHOT @ C:\Users\user1\springBoot-workspace\chapt_02\pom.xml.
+2023-12-04 12:07:30,989 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /chapt_02/src/main/java
+2023-12-04 12:07:30,990 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/main/resources
+2023-12-04 12:07:30,996 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/main/resources
+2023-12-04 12:07:31,003 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /chapt_02/src/test/java
+2023-12-04 12:07:31,003 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/test/resources
+2023-12-04 12:07:33,498 [Worker-102: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 9 sec
+2023-12-04 12:07:33,500 [Worker-102: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-04 12:07:33,684 [Worker-102: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kh.chap2_02:chapt_02:0.0.1-SNAPSHOT @ C:\Users\user1\springBoot-workspace\chapt_02\pom.xml.
+2023-12-04 12:07:34,104 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /chapt_02/src/main/java
+2023-12-04 12:07:34,104 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/main/resources
+2023-12-04 12:07:34,104 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/main/resources
+2023-12-04 12:07:34,105 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /chapt_02/src/test/java
+2023-12-04 12:07:34,105 [Worker-102: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/test/resources
+2023-12-04 12:07:34,561 [Worker-102: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2023-12-04 12:07:34,606 [Worker-101: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-04 12:07:34,793 [Worker-101: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.kh.chap2_02:chapt_02:0.0.1-SNAPSHOT @ C:\Users\user1\springBoot-workspace\chapt_02\pom.xml.
+2023-12-04 12:07:35,215 [Worker-101: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /chapt_02/src/main/java
+2023-12-04 12:07:35,216 [Worker-101: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/main/resources
+2023-12-04 12:07:35,216 [Worker-101: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/main/resources
+2023-12-04 12:07:35,216 [Worker-101: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /chapt_02/src/test/java
+2023-12-04 12:07:35,216 [Worker-101: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /chapt_02/src/test/resources
+2023-12-04 12:07:35,506 [Worker-101: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2023-12-04 12:11:54,159 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.15; built: 2023-04-11T17:25:14.480Z; git: 68017dbd00236bb7e187330d7585a059610f661d; jvm 17.0.9+9
+2023-12-04 12:11:54,182 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2023-12-04 12:11:54,212 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1a957ed8{/help,null,AVAILABLE}
+2023-12-04 12:11:54,234 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@17c30b26{HTTP/1.1, (http/1.1)}{127.0.0.1:54540}
+2023-12-04 12:11:54,249 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@347c9328{STARTING}[10.0.15,sto=0] @11456798ms
