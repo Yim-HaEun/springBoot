@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="EUC-KR">
 		<title>Product List</title>
@@ -27,7 +27,14 @@
 					<td th:text="${product.price}"></td>
 					<td th:text="${product.stock_quantity}"></td>
 					<td><a th:href="@{/products/detail/{id}(id=${product.product_id})}">상세보기클릭</a></td>
+				<!--카트에 담을 수량 체크하기-->
+					<form>
+						<input type="hidden" th:name="productId" value=""/>
+						<input type="number" th:name="quantity" value=""/>
+						<button>장바구니에 추가하기</button>
+					</form>
 				</tr>
+				<a th:href="@{/cart}">장바구니 보기</a>
 			</tbody>
 		</table>
 	</body>

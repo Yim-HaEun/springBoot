@@ -13,7 +13,6 @@ import com.kh.model.vo.DTO;
 public class DAO {
 
 	//사용자를 조회하기 위해 작성할 SQL문
-	
 	//1. 사용자가 있는지 확인하기 위해 '전체' 사용자를 조회하는 SQL문
 	public static List<DTO> selectAllUsers() throws SQLException{
 		
@@ -78,5 +77,4 @@ public class DAO {
 			
 			return userList;
 		}//searchUsersById()
-	
 }

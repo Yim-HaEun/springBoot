@@ -52,5 +52,50 @@ public class Product {
  	새로운 레코드가 삽입될 때마다 데이터베이스가 자동으로 기본키의 값을 증가시킴
  @GeneratedValue(strategy = GenerationType.IDENTITY)
  
+ 
+ Lombok
+ 	@Builder : 객체를 생성할 때 매개변수의 순서나 개수에 관계없이
+ 				보기 편할 수 있도록 객체를 생성할 수 있게 도와주는 메서드
+ 				
+ 	@AllArgsConstructor : 모든 필드에 생성자를  생성해줌
+ 						 객체를 생성할 때 모든 필드를 포함하는 생성자를 쉽게 만들 수 있음
+ 						 예제코드)
+ 						 @AllArgsConstructor
+ 						 public class Student{
+ 						 	private String name; // new Student("학생명",3);
+ 						 	private int grade;
+ 						 }
+ 	@NoArgsConstructor : 매개변수가 없는 기본 생성자를 생성해줌
+ 						예제코드)
+ 						@NoArgsConstructor
+ 						public class School{
+ 												//new School()
+ 						}
+ 
+ JPA 어노테이션
+ 	@Prepersist : 엔터티가 데이터베이스에 저장되기 전에 호출되는 메서드를 지정
+ 				 엔터티에 필요한 사전 처리작업을 수행하는데 많이 사용
+ 				 
+ 				 예제코드 :
+ 				 @Entity
+ 				 public class TestEntity{
+ 				 	@Id
+ 				 	private Long id;
+ 				 	private String name;
+ 				 	@DateTimeFormat(patter="yyyy-mm-dd")
+ 				 	private Date createDate; //now라는 메서드를 활용해서 현재 시간을 넣음
+ 				 	@PrePersists
+ 				 	private void preWork(){
+ 				 		//저장 전 수행할 작업을 작성
+ 				 		//생성일자 설정, 특정 필드 초기화
+ 				 	}
+ 				 	@PrePersists
+ 				 	private void preWork(){
+ 				 		this.createDate = LocalDate.now();
+ 				 		
+ 				 	}
+ 				 	
+ 				 }
+ 
   */
  
