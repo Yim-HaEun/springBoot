@@ -44,7 +44,7 @@ public class CartService {
 		CartItem  cartItem = cartItemRepository.findByCartIdAndItemId(cart.getId(), item.getId());
 		
 		if(cartItem ==null) { //상품이 장바구니에 존재하지않으면 카트 상품 생성 후 추가
-			cartItem = CartItem.createCartItem(cart, item, amount)
+			cartItem = CartItem.createCartItem(cart, item, amount);
 			cartItemRepository.save(cartItem);
 		}
 		else {//상품이 장바구니에 이미 존재한다면 수량만 증가
@@ -52,7 +52,7 @@ public class CartService {
 			update.setCart(cartItem.getCart());
 			update.setItem(cartItem.getItem());
 			update.addCount(amount);
-			update.setCartCount(update.getCartCount());
+			update.setCount(update.getCount());
 			cartItemRepository.save(update);
 			
 		}

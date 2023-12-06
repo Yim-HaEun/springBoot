@@ -16,6 +16,7 @@ import lombok.*;
 @Getter
 @Setter
 @Entity
+@Table(name="users")
 public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="user_seq")

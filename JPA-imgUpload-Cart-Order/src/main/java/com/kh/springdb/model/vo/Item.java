@@ -14,7 +14,6 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Item {
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="item_seq")
@@ -22,7 +21,7 @@ public class Item {
 	//primaryKey
 	private int id;
 	private String name;//상품이름 
-	private String description;//상품설명 
+	private String text;//상품설명 
 	private int price;//상품가격 
 	private int count;//판매개수 ]
 	private int stockQuantity;//재고

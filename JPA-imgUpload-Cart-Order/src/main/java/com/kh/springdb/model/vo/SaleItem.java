@@ -81,7 +81,7 @@ public class SaleItem {
 		saleItem.setSeller(seller);
 		saleItem.setItemName(cartItem.getItem().getName());
 		saleItem.setItemPrice(cartItem.getItem().getPrice());
-		saleItem.setItemCount(cartItem.getCartCount());
+		saleItem.setItemCount(cartItem.getCount());
 		saleItem.setItemTotalPrice(cartItem.getItem().getPrice()*count);
 		
 	

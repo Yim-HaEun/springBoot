@@ -53,11 +53,11 @@
     <fullyQualifiedTypeName name="com.kh.springdb.model.vo.CartItem"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-    <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
     <fullyQualifiedTypeName name="com.kh.springdb.repository.SaleRepository"/>
     <fullyQualifiedTypeName name="com.kh.springdb.repository.SaleItemRepository"/>
     <fullyQualifiedTypeName name="com.kh.springdb.repository.ItemRepository"/>
     <fullyQualifiedTypeName name="com.kh.springdb.model.vo.Sale"/>
     <fullyQualifiedTypeName name="com.kh.springdb.model.vo.User"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
 </qualifiedTypeNameHistroy>

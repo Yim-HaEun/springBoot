@@ -16,6 +16,7 @@ public class DAO {
 	//1. 사용자가 있는지 확인하기 위해 '전체' 사용자를 조회하는 SQL문
 	public static List<DTO> selectAllUsers() throws SQLException{
 		
+		
 		//1-1 커넥션 연결하기 위한 getConnection()
 		Connection conn = JDBCTemplate.getConnection();
 		

@@ -6,7 +6,7 @@ import com.kh.springdb.model.vo.User;
 
 public interface userRepository extends JpaRepository<User, Integer>{
 	//유저 이름 조회
-	User findByUserName(String username);
+	User findByUsername(String username);
 	//유저 아이디 찾기
 	User findById(int id);
 	

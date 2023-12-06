@@ -23,19 +23,19 @@ public class CartItem {
 	private Item item;
 	
 	//카트에 담긴 상품 갯수
-	private int cartCount;
+	private int count;
 	
 	public static CartItem createCartItem(Cart cart, Item item, int amount) {
 		CartItem cartItem = new  CartItem();
 		cartItem.setCart(cart);
 		cartItem.setItem(item);
-		cartItem.setCartCount(amount);
+		cartItem.setCount(amount);
 		return cartItem;
 	}
 	
 	//이미 담겨있는 물건 또 담을 경우 수량 증가
 	public void addCount(int count) {
-		this.cartCount += count;
+		this.count += count;
 	}
 }
 /*

@@ -5,7 +5,7 @@
 		<title>상품 등록하기 - 판매자용</title>
 	</head>
 	<body>
-		<form th:action ="@{/new}" method="post" enctype="multipart/form-data">
+		<form th:action ="@{/item/new}" method="post" enctype="multipart/form-data">
 			<div>
 				<div>
 					<label for ="isSale">상품 상태</label>
@@ -34,8 +34,8 @@
 					<p>상품의 재고를 입력해야합니다.</p>
 				</div>
 				<div>
-					<label for="photoFile">상품 이미지 업로드</label>
-					<input type="file" id="photoFile" name="photoFile"/>
+					<label for="imgFile">상품 이미지 업로드</label>
+					<input type="file" id="imgFile" name="imgFile"/>
 					<p>상품 이미지를 업로드해야합니다.</p>
 				</div>
 				<button type="submit">상품 등록</button>

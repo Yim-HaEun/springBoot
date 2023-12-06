@@ -27,7 +27,7 @@ public class ItemController {
 	
 	@GetMapping("/")
 	public String mainPage(Model model) {
-		List<Item> items = itemService.allItemList();
+		List<Item> items = itemService.allItemView();
 		model.addAttribute("items",items);
 		//view html과 연결하기 위해서 작성되는 페이지
 		return "/index";
@@ -36,7 +36,7 @@ public class ItemController {
 	 // 상품 등록 페이지 - 판매자만 가능
     @GetMapping("/item/new")
     public String itemSaveForm(Model model) {
-            return "itemForm";
+            return "addItemForm";
       
     }
     // 상품 등록 (POST) - 판매자만 가능
@@ -44,7 +44,7 @@ public class ItemController {
     public String itemSave(Item item, MultipartFile imgFile) throws Exception {
      
             itemService.saveItem(item, imgFile);
-            return "redirect:/main";
+            return "redirect:/index";
        
     }
     /*

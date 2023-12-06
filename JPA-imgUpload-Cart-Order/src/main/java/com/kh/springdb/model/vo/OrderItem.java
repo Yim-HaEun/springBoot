@@ -11,6 +11,7 @@ import lombok.*;
 @Getter
 @Setter
 @Entity
+@Table(name="orderitems")
 public class OrderItem {
 	@Id
 	@GeneratedValue(strategy =GenerationType.SEQUENCE,generator="orderItem_seq")
@@ -79,8 +80,8 @@ public class OrderItem {
 		orderItem.setUser(user);
 		orderItem.setItemName(cartItem.getItem().getName());
 		orderItem.setItemPrice(cartItem.getItem().getPrice());
-		orderItem.setItemCount(cartItem.getCartCount());
-		orderItem.setItemTotalPrice(cartItem.getItem().getPrice()*cartItem.getCartCount());
+		orderItem.setItemCount(cartItem.getCount());
+		orderItem.setItemTotalPrice(cartItem.getItem().getPrice()*cartItem.getCount());
 		orderItem.setSaleItem(saleItem);
 		
 		return orderItem;
