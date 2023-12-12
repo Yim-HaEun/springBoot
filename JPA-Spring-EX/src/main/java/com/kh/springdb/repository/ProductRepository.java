@@ -1,5 +1,8 @@
 package com.kh.springdb.repository;
 
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.kh.springdb.model.Product;
@@ -9,5 +12,5 @@ public interface ProductRepository extends JpaRepository<Product,Integer>{
 	Product findProductById(int id);
 	
 	//페이지네이션 메서드
-	
+	Page<Product> findAll(Pageable pageable);
 }
