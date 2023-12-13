@@ -45,10 +45,12 @@ public class Product {
 	@DateTimeFormat(pattern = "yyyy-mm-dd")
 	private LocalDate createDate;
 	
-	@PrePersist //DB에 INSER되기 직전에 실행. 즉 DB에 값을 넣으면 자동으로 실행됨
+	@PrePersist //DB에 INSERT되기 직전에 실행. 즉 DB에 값을 넣으면 자동으로 실행됨
 	public void createDate() {
 		this.createDate = LocalDate.now();
 	}
+	
+	//제품에 대한 좋아요를 받고싶다면 여기에 추천과 관련된 변수를 넣어줘도 됨
 	
 
 }
