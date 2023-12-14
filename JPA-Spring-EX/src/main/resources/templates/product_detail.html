@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security>
 	<head>
 	    <meta charset="UTF-8">
 	    <title>View</title>
@@ -25,7 +25,7 @@
 	</head>
 	<body>
 	    <h1>View</h1>
-	    
+	    <a >상품 수정하기</a>
 	    <div class="product">
 		    <div th:if="${product.imgName != null and product.imgPath != null}">
 		        <img th:src="@{${product.imgPath}}"/>

@@ -46,4 +46,8 @@ public class ProductService {
 	public Product getProductById(int id) {
 		return productRepository.findProductById(id);
 	}
+	public void likeProduct() {
+		// TODO Auto-generated method stub
+		
+	}
 }
